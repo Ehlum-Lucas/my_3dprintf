@@ -10,5 +10,6 @@
 int my_3dprintf(char *str, ...)
 {
     printf(str);
+    printf("\n%s\n", Letters[1].letter1);
     return 0;
 }

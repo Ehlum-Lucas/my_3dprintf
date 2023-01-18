@@ -11,6 +11,18 @@
     #include <stdarg.h>
     #include <stdio.h>
 
+    typedef struct letter_s {
+        char *letter1;
+        char *letter2;
+        char *letter3;
+        char *letter4;
+        char *letter5;
+        char *letter6;
+        char ascii;
+    } letter_t;
+
+    extern const letter_t Letters[];
+
     int my_3dprintf(char *str, ...);
 
 #endif
