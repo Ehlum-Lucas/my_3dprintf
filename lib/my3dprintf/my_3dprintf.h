@@ -11,6 +11,11 @@
     #include <stdarg.h>
     #include <stdio.h>
 
+    typedef struct letter_s {
+        char **letter;
+        char ascii;
+    } letter_t;
+
     int my_3dprintf(char *str, ...);
 
 #endif

@@ -9,7 +9,8 @@ NAME		=		libmy_3dprintf.a
 
 MYH			=		my_3dprintf.h \
 
-SRC			=       my_3dprintf.c
+SRC			=       my_3dprintf.c  \
+					letters.c
 
 CFLAGS      +=         -I . -Wall -Wextra -pedantic \
 					   -Wstrict-prototypes \
