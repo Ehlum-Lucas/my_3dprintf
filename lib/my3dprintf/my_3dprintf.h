@@ -10,6 +10,8 @@
 
     #include <stdarg.h>
     #include <stdio.h>
+    #include <string.h>
+    #include <stddef.h>
 
     typedef struct letter_s {
         char *letter1;
