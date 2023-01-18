@@ -8,7 +8,7 @@
 NAME         =		    my_3dprintf
 
 INCLUDE      =         -I include/ -I include/lib/ -L lib/ \
-                       -lmy -lmyprintf -lformatstring -lparser
+                       -lmy -lmyprintf -lformatstring -lparser -lmy_3dprintf
 
 CFLAGS       +=         -Wall -Wextra -pedantic \
 					        -Wstrict-prototypes -fstack-protector\
@@ -44,6 +44,7 @@ $(NAME):	$(OBJ)
 			"SRC files sucessfully build. "$(DEFAULT))
 			@make -C lib/my/ --no-print-directory
 			@make -C lib/parser/ --no-print-directory
+			@make -C lib/my3dprintf/ --no-print-directory
 			@make -C lib/myprintf/ --no-print-directory
 			@make -C lib/formatstring/ --no-print-directory
 			@gcc -o $(NAME) $(OBJ) $(INCLUDE) \
@@ -58,6 +59,7 @@ clean:
 			@make -C lib/parser/ clean --no-print-directory
 			@make -C lib/myprintf/ clean --no-print-directory
 			@make -C lib/formatstring/ clean --no-print-directory
+			@make -C lib/my3dprintf/ clean --no-print-directory
 			@$(RM) $(OBJ)
 			@$(RM) $(TEMPFILES)
 			@($(ECHO) $(BOLD) $(GREEN)✓$(LIGHT_BLUE)" Clean SRC "$(DEFAULT))
@@ -66,6 +68,7 @@ fclean:		clean
 			@make -C lib/myprintf/ fclean --no-print-directory
 			@make -C lib/parser/ fclean --no-print-directory
 			@make -C lib/formatstring/ fclean --no-print-directory
+			@make -C lib/my3dprintf/ fclean --no-print-directory
 			@make -C lib/my/ fclean --no-print-directory
 			@$(RM) $(NAME)
 			@$(RM) $(OBJ)

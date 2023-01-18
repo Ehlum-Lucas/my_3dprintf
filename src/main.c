@@ -6,8 +6,9 @@
 */
 
 #include "my_3dprintf.h"
+#include "my.h"
 
 int main (UNUSED int ac, UNUSED char **argv, UNUSED char **env)
 {
-    return 0;
+    my_3dprintf("Hello World");
 }

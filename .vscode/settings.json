@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "my_3dprintf.h": "c",
+        "my.h": "c"
+    }
+}
